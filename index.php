@@ -66,10 +66,10 @@
 
                 })
                 .fail(function(data) {
-                    console.log("Error: editarCriterioDeEvaluacionBorrar");
+                    console.log("Error: peticionAJAX");
                 })
                 .always(function(data) {
-                    console.log("Completada editarCriterioDeEvaluacionBorrar");
+                    console.log("Completada peticionAJAX");
                 });
                 
     }

@@ -20,10 +20,16 @@
           <p>Petición</p>
           
           <a href="#"
-             class="btn btn-success border boder-info border-top-0 border-bottom-0 border-right-0" 
-             title="Petición AJAX"
-             id="peticionAJAX"
-             onclick="peticionAJAX()">Petición AJAX</a>
+               class="btn btn-success border boder-info border-top-0 border-bottom-0 border-right-0" 
+               title="Petición AJAX"
+               id="peticionAJAX"
+               onclick="peticionAJAX()">Petición AJAX enviado variables por POST</a>
+            
+            <a href="#"
+               class="btn btn-success border boder-info border-top-0 border-bottom-0 border-right-0" 
+               title="Petición AJAX"
+               id="peticionAJAX"
+               onclick="peticionAJAXenviandoJSON()">Petición AJAX enviando un JSON</a>
 
       </div>
       
@@ -37,11 +43,11 @@
     
     function peticionAJAX() {
         
-        console.log('Petición AJAX');
+        console.log('Petición AJAX enviado variables mediante POST');
         
         $.ajax(
               {
-                url : "demo.php",
+                url : "demopost.php",
                 type: "POST",
                 data : {
                         dato1: 'Primer dato',
